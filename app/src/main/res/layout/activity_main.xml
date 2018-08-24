@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEW GAME" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_below="@id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Turn : " />
+    <TextView
+        android:id="@+id/t2"
+        android:layout_below="@id/b1"
+        android:layout_toRightOf="@id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Click NEW GAME to start"/>
+
+    <GridLayout
+        android:id="@+id/board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/t2"
+        android:paddingTop="72dp"
+        >
+        <ImageButton
+            android:id="@+id/i1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/bgi"
+            />
+        <ImageButton
+        android:id="@+id/i2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/bgi"
+            />
+        <ImageButton
+        android:id="@+id/i3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/bgi"
+            />
+        <ImageButton
+        android:id="@+id/i4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/bgi"/>
+        <ImageButton
+        android:id="@+id/i5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/bgi" />
+        <ImageButton
+        android:id="@+id/i6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/bgi" />
+        <ImageButton
+        android:id="@+id/i7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/bgi" />
+        <ImageButton
+        android:id="@+id/i8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/bgi" />
+        <ImageButton
+        android:id="@+id/i9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/bgi"/>
+
+    </GridLayout>
+
+
+
+
+</RelativeLayout>
